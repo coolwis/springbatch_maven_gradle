@@ -5,4 +5,6 @@
  - GRADLE https://github.com/parkseungchul/comment/tree/master/C002
 
 
-
+docker exec -it docker_batch_app bash
+ 
+./batchRun.sh csvToJpaJob3 /INFILES/csvToJpaJob3.txt 3

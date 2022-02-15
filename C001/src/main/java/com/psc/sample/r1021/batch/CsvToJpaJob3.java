@@ -65,7 +65,7 @@ public class CsvToJpaJob3 {
     @StepScope
     public FlatFileItemReader<TwoDto> csvToJpaJob3_Reader(@Value("#{jobParameters[inFileName]}")String inFileName) {
         return new FlatFileItemReaderBuilder<TwoDto>()
-                .name("multiJob1_Reader")
+                .name("csvToJpaJob3_Reader")
                 .resource(new FileSystemResource(inFileName))
                 .delimited().delimiter(":")
                 .names("one","two")
